@@ -104,14 +104,49 @@ Under ```#SMS Activate``` you can select proper settings. P.S. All of the settin
 * *TRIES* - Tries the app will take in order to try and activate the email (default: **40**, )
 
 ### 3.2.2) Input Files
-There are **2 main files** in order for the Recovery Module to work. one of them is ***emails.csv***, in which you should enter all the email you want recovered/checked. This file could be opened with Notepad, but Ron's Editor is preferred, as it will be easier to edit them. you should enter them like this:
-```
-email@gmail.com,password,recovery.mail@gmail.com,,
-```
+In the ***Input*** folder, there are **2 main files** in order for the Recovery Module to work. 
+
+* ***emails.csv***
+>Here you should enter all the email you want **recovered/checked**. This file could be opened with Notepad, but Ron's Editor is preferred, as it will be easier to edit them. You should enter them like this:
+>```
+>email@gmail.com,password,recovery.mail@gmail.com,,
+>```
+
+* ***proxies.txt***
+>Here you should enter all the **proxies you want to be used**. This file could be opened with Notepad, WordPad, Sublime Text, etc. You should enter them like this:
+>```
+>host:port:user:pass
+>```
 
 ### 3.2.3) Output Files
+In the ***SMS*** folder, there is **one file** for now, which will output **checked profiles**
+
+* **accs.csv**
+>*See more imformation as on to why there is only one file in **5) Important Information**.*\
+>This file outputs all the emails that have been checked and recovered. They include:
+>* Emails that were already **working perfectly**
+>* Emails that have been **SMS recovered** and now work
+>* Emails that are **banned** and no longer can work
 
 ## 3.3) How it Works
+When you select ```Email Recovery``` by pressing **1** on your keyboard, you are prompted with this:
+
+1) **Entering Tab Amount**
+>```Enter your tab amount: ```\
+>Here, you should enter your needed tab amount that will run simultaneously during the task. In simple turns, **how much emails you want recovering at one time?**. 
+>* For **slower PCs**, or PCs with slow internet, the recommended amount is **5** (*can be changed*).
+>* For **faster PCs** or Dedicated Servers, the recommended amount **10** (*can be changed*).
+
+2) **Selecting preferred country**
+>```
+>Countries:
+>(0) Russia
+>(1) Ukraine
+>Enter your preffered country:
+>```
+>Here, you should enter your **preferred country** the SMS Activate will start from (*In the future, more countries will be available for selection*). It means that if there will be an email that requires recovery, then the **country selected** phone number will be used. If it was used **too many times**, or there are **no available phones** in this country, then the country will be **rotated** to the next one.
+
+
 
 
 ***
