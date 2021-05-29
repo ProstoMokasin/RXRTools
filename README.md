@@ -146,22 +146,48 @@ When you select ```Email Recovery``` by pressing **1** on your keyboard, you are
 >```
 >Here, you should enter your **preferred country** the SMS Activate will start from (*In the future, more countries will be available for selection*). It means that if there will be an email that requires recovery, then the **country selected** phone number will be used. If it was used **too many times**, or there are **no available phones** in this country, then the country will be **rotated** to the next one.
 
-
+*Then, the app will do everything for you, so you can grab a coffee while it goes ;)*
 
 
 ***
 # 4) Email Checker (WIP)
 ## 4.1) What it Does?
+"Email Checker" is a RXRTools module created for checking if selected emails are still forwarded and to which mail.
+
+**For example:** you have a list of emails, but you did not use them in a while, or just want to check what they are forwarded to. In this case, you will use the Checker tool. It checks emails **if an email will be forwarded to another mail**. If they do forward, then they will be stored in the appropriate files. In the worse case, the gmail account that is checked unforwarded. In this case, the Checker Tool will save all the unforwarded gmails in a specific **.csv file**, so you can later filter out your list.
 
 ## 4.2) Setup
 
 ### 4.2.1) Settings
 
 ### 4.2.2) Input Files
+In the ***Input*** folder, there is **1 main file** in order for the Recovery Module to work. 
+
+* ***emails.csv***
+>Here you should enter all the email you want **recovered/checked**. This file could be opened with Notepad, but Ron's Editor is preferred, as it will be easier to edit them. You should enter them like this:
+>```
+>email@gmail.com,password,recovery.mail@gmail.com,,
+>```
+
+* ***proxies.txt***
+>Here you should enter all the **proxies you want to be used**. This file could be opened with Notepad, WordPad, Sublime Text, etc. You should enter them like this:
+>```
+>host:port:user:pass
+>```
 
 ### 4.2.3) Output Files
+In the ***Checker*** folder, there is **one file** for now, which will output **checked gmails**
+
+* **done.txt**
+>*See more imformation as on to why there is only one file in **5) Important Information**.*\
+>This file outputs all the emails that have been checked for forwarding. They include:
+>* Emails that were already **forwarded correctly**
+>* Emails that have been **not forwarded**
 
 ## 4.3) How it Works
+It will do everything for you hands-free, nothing to input in the toolbox.
+
+*So you can grab a coffee while it goes ;)*
 
 ***
 # 5) Important Information
